@@ -1,0 +1,150 @@
+:root {
+  --bgcolor: #121212;
+  --bodytext: rgba(255,255,255,0.85);
+  --titlecolor: var(--bodytext);
+  --iconcolor: var(--bodytext);
+  --boxshadowcolor: rgba(213, 221, 236, 0.4) 1px 1px 1px 1px;
+  --buttonbg: #E8DD78;
+  --buttontext: #000;
+  --plyr-color-main: rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+    font-family: 'Averta';
+    src: url('../fonts/averta/AvertaDemoPECuttedDemo-Regular.otf')
+}
+
+@font-face {
+    font-family: 'Hey August';
+    src: url('../fonts/Hey_August/Hey August.otf')
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--titlecolor);
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+  background: var(--bgcolor);
+  background-size: contain;
+  color: var(--bodytext);
+  font-family: 'Averta', sans-serif;
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-family: 'Hey August';
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.headline {
+  font-size: 3rem;
+  font-family: 'Hey August';
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.sub-headline {
+  font-size: 1.5rem;
+}
+
+.cta {
+  margin: 20px auto;
+  border: transparent;
+  border-color: transparent;
+  margin-bottom: 10px;
+  background-color: var(--buttonbg);
+  border-radius: 50px;
+  color: var(--buttontext);
+  padding: 20px;
+  font-family: "Averta";
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.cta:hover {
+  color: var(--buttontext);
+  transform: scale(1.05);
+  transition-duration: .5s;
+}
+
+/*section:first-child {
+  margin-top: 50px;
+}
+*/
+.feature {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+.feature div {
+  width: 95%;
+}
+
+.feature i, h6 {
+  font-size: 1.2rem;
+}
+
+.feature i {
+  color: var(--buttonbg);
+  margin-right: 10px;
+}
+
+.old-price span {
+  text-decoration: line-through;
+}
+
+.new-price {
+  font-size: 3rem;
+}
+
+.seal {
+  width: 200px;
+}
+
+.testimony {
+  font-style: italic;
+}
+
+.mentalidade_de_homem {
+  width: 49%;
+  transition-duration: .5s;
+}
+
+.mentalidade_de_homem:hover {
+  transform: scale(1.2);
+}
+
+.square {
+  border-radius: 6px;
+}
